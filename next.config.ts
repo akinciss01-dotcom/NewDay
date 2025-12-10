@@ -1,7 +1,13 @@
-import type { NextConfig } from "next";
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  // Diğer yapılandırma ayarları buraya gelir
 
-const nextConfig: NextConfig = {
-  /* config options here */
+  // Yeni eklenen kısım: Geliştirme ortamında (dev) erişime izin verilen IP'ler
+  // dev: {
+  //   allowedDevOrigins: [
+  //     'http://10.54.84.145:3000', // Kendi yerel ağ adresiniz
+  //   ],
+  // },
 };
 
-export default nextConfig;
+module.exports = nextConfig;
